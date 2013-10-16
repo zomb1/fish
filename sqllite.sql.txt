@@ -1,0 +1,19 @@
+CREATE TABLE Fiszki(
+   id INTEGER PRIMARY KEY   AUTOINCREMENT,
+   polishWord text NOT NULL,
+   foreignWord text NOT NULL
+);
+
+
+INSERT INTO Fiszki (polishWord,foreignWord)
+VALUES ( 'książka', 'book' );
+
+INSERT INTO Fiszki (polishWord,foreignWord)
+VALUES ( 'stół', 'table' );
+
+INSERT INTO Fiszki (polishWord,foreignWord)
+VALUES ( 'mapa', 'map' );
+
+
+
+ALTER TABLE OLD_COMPANY ADD COLUMN NAZWA_KOLUMNY char(1);

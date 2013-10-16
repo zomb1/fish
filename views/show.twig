@@ -1,0 +1,6 @@
+<h1>Lista słowek</h1>
+<ul id="navigation">
+    {% for item in wordlist %}
+        <li>{{ item.polishWord }} [{{ item.foreignWord }}] <a href="{{ url('editWord', {id: item.id }) }}">Edytuj</a> <a href="{{ url('deleteWord', {id: item.id }) }}">Usuń</a></li>
+    {% endfor %}
+</ul>
